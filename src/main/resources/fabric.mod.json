@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "noautopause",
+	"version": "${version}",
+	"name": "NoAutoPause",
+	"description": "Prevents Minecraft from automatically pausing when unfocusing the window.",
+	"authors": [],
+	"contact": {
+		"repo": "https://github.com/MelnCat/NoAutoPause"
+	},
+	"license": "MPL-2.0",
+	"icon": "assets/noautopause/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.melncat.noautopause.NoAutoPause"]
+	},
+	"mixins": [
+		"noautopause.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}"
+	}
+}
